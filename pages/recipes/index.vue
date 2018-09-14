@@ -4,18 +4,21 @@
         thumbnail="assets/img/pizza.jpg"
         title="Savoureuse pizza"
         previewDescription=" Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        id="1"
          />
 
          <recipe 
          thumbnail="assets/img/humberger.jpg"
          title="Un big belly burger"
          previewDescription=" Lorem ipsum dolor sit amet consectetur adipisicing elit."
+         id="2"
          />
 
         <recipe 
          thumbnail="assets/img/salade.jpg"
          title="Une salade 100% bio"
          previewDescription=" Lorem ipsum dolor sit amet consectetur adipisicing elit."
+         id="3"
          />
         
     </section>

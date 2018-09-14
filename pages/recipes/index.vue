@@ -1,28 +1,34 @@
 <template>
     <section class="recipes">
-        <article class="recipe">
-            <div class="thumbnail" style="background-image: url('../../assets/img/pizza.jpg');"></div>
-            <h1>Le titre de la nourriture</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-        </article>
-        <article class="recipe">
-            <div class="thumbnail" style="background-image: url('/assets/img/humberger.jpg');"></div>
-            <h1>Le titre de la nourriture</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-        </article>
-        <article class="recipe">
-            <div class="thumbnail" style="background-image: url('/assets/img/salade.jpg');"></div>
-            <h1>Le titre de la nourriture</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-        </article>
+        <recipe 
+        thumbnail="assets/img/pizza.jpg"
+        title="Savoureuse pizza"
+        previewDescription=" Lorem ipsum dolor sit amet consectetur adipisicing elit."
+         />
+
+         <recipe 
+         thumbnail="assets/img/humberger.jpg"
+         title="Un big belly burger"
+         previewDescription=" Lorem ipsum dolor sit amet consectetur adipisicing elit."
+         />
+
+        <recipe 
+         thumbnail="assets/img/salade.jpg"
+         title="Une salade 100% bio"
+         previewDescription=" Lorem ipsum dolor sit amet consectetur adipisicing elit."
+         />
+        
     </section>
 </template>
+<script>
+import Recipe from '~/components/Recipe';
+export default {
+    components: {
+        Recipe
+    }
+}
+</script>
+
 <style scoped>
     .recipes
     {
@@ -30,23 +36,5 @@
         flex-flow: row wrap;
         justify-content: center;
         align-content: center;
-    }
-
-    .recipe
-    {
-        box-sizing: border-box;
-        width: 280px;
-        padding: 8px;
-        border: 1px solid #ccc;
-        box-shadow: 0 2px 2px #aaa;
-        margin: 10px;
-    }
-
-    .thumbnail 
-    {
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        height: 200px;
     }
 </style>
